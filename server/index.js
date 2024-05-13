@@ -20,7 +20,7 @@ app.post('/payment', async (req, res) => {
       const payment = await stripe.paymentIntents.create({
         amount,
         currency: 'usd',
-        description: 'Spatula',
+        description: 'Gamer Lux 5000',
         payment_method: id,
         confirm: true,
         return_url: 'http://localhost:3001/success', // Add a return URL
